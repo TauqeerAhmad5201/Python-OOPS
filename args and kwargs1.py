@@ -1,6 +1,6 @@
-def adder(*num):
+def adder(*num):    #a tuple is given otherwise converted but yes tuple
     sum = 0 
-
+    
     for n in num:
         sum = sum + n
     
