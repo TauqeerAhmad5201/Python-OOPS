@@ -1,3 +1,5 @@
+#super() works with __init__
+
 class Impose:
     def __init__(self):
         print('Class Impose init is working')
@@ -27,7 +29,7 @@ class B(Impose):
     def feature4(self):
         print('Feature 4 is working')
 
-class C(B,A):  #MRO
+class C(A,B):  #MRO
     def __init__(self):
         super().__init__()
         print('Class C init is working')
